@@ -1,7 +1,11 @@
 package edu.craptocraft.ricksy.business;
 
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
+
+import java.util.HashMap;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -37,5 +41,19 @@ public class UfosParkTest {
     public void testdispatch(){
         ufosPark.dispatch(abradolh);
         assertEquals(2500d, abradolh.getCredit(), 0);
+    }
+
+    @Test
+    public void testAdd() {
+
+        // Flota vacía
+        assertNotEquals("{dox=null, unx=null}", ufosPark.getFlota());
+
+        // Añadimos flota:
+        String[] ufosID = { "unx", "dox"};
+        for (String ovni : ufosID) {
+            ufosPark.add(ovni);
+        }
+        assertEquals("{dox=null, unx=null}", ufosPark.getFlota().toString());
     }
 }

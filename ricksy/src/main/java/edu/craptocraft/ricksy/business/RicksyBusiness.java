@@ -56,10 +56,10 @@
  
     //      // Da de alta en la flota de ovnis 2 UFOS.
  
-    //      String[] ufosID = { "unx", "dox" };
-    //      for (String ovni : ufosID) {
-    //          ufosPark.add(ovni);
-    //      }
+         String[] ufosID = { "unx", "dox" };
+         for (String ovni : ufosID) {
+             ufosPark.add(ovni);
+         }
          
     //      // Procesamos el pago y reserva de ovni de Abradolph
     //      ufosPark.dispatch(abradolph);
