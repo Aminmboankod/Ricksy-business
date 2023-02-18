@@ -3,7 +3,7 @@ package edu.craptocraft.ricksy.business;
 import java.util.HashMap;
 import java.util.Map;
 
-public class UfosPark {
+public class UfosPark implements GuestDispatcher {
 
     private final Map<String, String> flota = new HashMap<String, String>();
     double fee;

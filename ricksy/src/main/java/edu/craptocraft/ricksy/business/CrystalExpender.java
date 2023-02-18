@@ -1,6 +1,6 @@
 package edu.craptocraft.ricksy.business;
 
-public class CrystalExpender {
+public class CrystalExpender implements GuestDispatcher {
 
     private Integer stock;
     private Double itemCost;
@@ -14,7 +14,7 @@ public class CrystalExpender {
 
 
 
-    public Integer getStock() {
+    public Integer stock() {
         return stock;
     }
 
@@ -34,7 +34,7 @@ public class CrystalExpender {
 
     @Override
     public String toString() {
-        return "stock: " + getStock() + "\nitemCost: " + getItemCost();
+        return "stock: " + stock() + "\nitemCost: " + getItemCost();
     }
 
 
@@ -43,7 +43,7 @@ public class CrystalExpender {
         
         if (card.credit() >= getItemCost()) {
             card.setCredit(card.credit()-getItemCost());
-            setStock(getStock()-1);
+            setStock(stock()-1);
         }
     }
 
