@@ -36,11 +36,11 @@
           * el crédito inicial es de 3000 EZIS
           */
  
-    //      CreditCard abradolph = new CreditCard("Abradolph Lincler", "4916119711304546");
+         CreditCard abradolph = new CreditCard("Abradolph Lincler", "4916119711304546");
          
-    //      System.out.println("\n" + "Tarjeta de Abradolph" + "\n" + 
-    //                                "===================="        );
-    //      System.out.println(abradolph);
+         System.out.println("\n" + "Tarjeta de Abradolph" + "\n" + 
+                                   "===================="        );
+         System.out.println(abradolph);
  
     //      /**
     //       * Construye el componente de reserva de Ovnis.
@@ -243,11 +243,11 @@
     //          System.out.println(card);
     //          System.out.println();
     //      }
-    //  }
+     }
  
     //  private static void mostrarReserva(CreditCard card, CrystalExpender expender, UfosPark ufos) {
     //      System.out.println(card);
     //      System.out.println("Packs: " + expender.stock());
     //      System.out.println("Ovni: " + ufos.getUfoOf(card.number()));
-    }
+    // }
  }
