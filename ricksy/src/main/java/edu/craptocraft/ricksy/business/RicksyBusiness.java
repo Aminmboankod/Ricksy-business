@@ -126,18 +126,18 @@
          System.out.println(ufosPark);
  
  
-    //      /**
-    //       * Construye el dispensador de packs de bienvenida.
-    //       * Indica el numero de unidades y el coste de cada
-    //       * uno de ellos, que es de 50 EZIs
-    //       */
+         /**
+          * Construye el dispensador de packs de bienvenida.
+          * Indica el numero de unidades y el coste de cada
+          * uno de ellos, que es de 50 EZIs
+          */
  
-    //      CrystalExpender packExpender = new CrystalExpender(3, 50);
+         CrystalExpender packExpender = new CrystalExpender(3, 50);
  
-    //      // Muestra el total de packs y su precio unidad
-    //      System.out.println("\nPacks\n" + 
-    //                           "=====");
-    //      System.out.println(packExpender);
+         // Muestra el total de packs y su precio unidad
+         System.out.println("\nPacks\n" + 
+                              "=====");
+         System.out.println(packExpender);
  
     //      // Abradolph compra su pack de bienvenida
     //      packExpender.dispatch(abradolph);
