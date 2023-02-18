@@ -69,18 +69,18 @@
                               "=================");
          System.out.println(ufosPark.getUfoOf(abradolph.number()));
         
-    //      // Mostramos el credito de la tarjeta de Abradolph
-    //      System.out.println("Credito de Abradolph: " + abradolph.credit());
+         // Mostramos el credito de la tarjeta de Abradolph
+         System.out.println("Credito de Abradolph: " + abradolph.credit());
  
-    //      // La dualidad en Abradolph quiere reservar otro ovni.
-    //      // El sistema detecta que ya tiene uno 
-    //      // e ignora la petición.
+         // La dualidad en Abradolph quiere reservar otro ovni.
+         // El sistema detecta que ya tiene uno 
+         // e ignora la petición.
  
-    //      System.out.println("\nAbradolph quiere otro ovni\n" + 
-    //                           "==========================");
-    //      ufosPark.dispatch(abradolph);
-    //      System.out.println("Su credito no ha cambiado: " + abradolph.credit());
-    //      System.out.println("Ovni de Abradolph: " + ufosPark.getUfoOf(abradolph.number()));
+         System.out.println("\nAbradolph quiere otro ovni\n" + 
+                              "==========================");
+         ufosPark.dispatch(abradolph);
+         System.out.println("Su credito no ha cambiado: " + abradolph.credit());
+         System.out.println("Ovni de Abradolph: " + ufosPark.getUfoOf(abradolph.number()));
  
     //      // A GearHead le vacía la tarjeta el alien "Cámara Lenta" 
     //      // mientras le daba la chapa, justo antes de pagar el ovni.

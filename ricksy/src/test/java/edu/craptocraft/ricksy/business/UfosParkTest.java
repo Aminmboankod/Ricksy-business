@@ -40,7 +40,7 @@ public class UfosParkTest {
     @Test
     public void testdispatch(){
         ufosPark.dispatch(abradolh);
-        assertEquals(2500d, abradolh.getCredit(), 0);
+        assertEquals(2500d, abradolh.credit(), 0);
     }
 
     @Test

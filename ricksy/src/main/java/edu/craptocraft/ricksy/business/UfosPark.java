@@ -14,15 +14,17 @@ public class UfosPark {
 
     public void dispatch(CreditCard card) {
         double costOvni = 500d;
-        double cost = card.getCredit() - costOvni;
+        double cost = card.credit() - costOvni;
 
-        if ( card.getCredit() >= costOvni ) {
+        if ( (card.credit() >= costOvni) && (!flota.containsValue(card.number()))) {
             card.setCredit(cost);
             for (String key : flota.keySet()) {
                 if (flota.get(key) == null) {
                     flota.replace(key, card.number());
                 }
-            }
+            } 
+        } else {
+            System.out.println("Ya tiene un ovni");
         }
         
     }
