@@ -16,7 +16,7 @@ public class CreditCard {
         return owner;
     }
 
-    public String getNumber() {
+    public String number() {
         return number;
     }
 
@@ -38,7 +38,7 @@ public class CreditCard {
 
     @Override
     public String toString() {
-        return "owner: " + getOwner() + "\nnumber: " + getNumber() + "\ncredit: " + getCredit() + SYMBOL;
+        return "owner: " + getOwner() + "\nnumber: " + number() + "\ncredit: " + getCredit() + SYMBOL;
     }
 
 

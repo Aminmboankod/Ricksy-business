@@ -18,8 +18,13 @@ public class UfosPark {
 
         if ( card.getCredit() >= costOvni ) {
             card.setCredit(cost);
+            for (String key : flota.keySet()) {
+                if (flota.get(key) == null) {
+                    flota.replace(key, card.number());
+                }
+            }
         }
-
+        
     }
 
 
@@ -31,5 +36,19 @@ public class UfosPark {
     public void add(String ovni) {
         getFlota().putIfAbsent(ovni, null);
     }
+
+    public String getUfoOf(String number) {
+
+        String ufo = "";
+
+        for (String key : flota.keySet()) {
+            if (flota.get(key) == number) {
     
+                ufo = key;
+            }
+    
+        }
+        
+        return ufo;
+    }
 }

@@ -56,4 +56,14 @@ public class UfosParkTest {
         }
         assertEquals("{dox=null, unx=null}", ufosPark.getFlota().toString());
     }
+
+    @Test
+    public void testgetUfoOf() {
+        String[] ufosID = { "unx", "dox"};
+        for (String ovni : ufosID) {
+            ufosPark.add(ovni);
+        }
+        ufosPark.dispatch(abradolh);
+        assertEquals("unx", ufosPark.getUfoOf(abradolh.number()));
+    }
 }
