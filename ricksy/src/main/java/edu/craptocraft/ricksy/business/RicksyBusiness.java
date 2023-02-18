@@ -139,13 +139,13 @@
                               "=====");
          System.out.println(packExpender);
  
-    //      // Abradolph compra su pack de bienvenida
-    //      packExpender.dispatch(abradolph);
+         // Abradolph compra su pack de bienvenida
+         packExpender.dispatch(abradolph);
  
-    //      System.out.println("\nAbradolph compra su pack\n" + 
-    //                           "========================");
-    //      System.out.println("Packs\n" + packExpender);
-    //      System.out.println("Credito de Abradolph: " + abradolph.credit());
+         System.out.println("\nAbradolph compra su pack\n" + 
+                              "========================");
+         System.out.println("Packs\n" + packExpender);
+         System.out.println("Credito de Abradolph: " + abradolph.credit());
  
     //      // El pobre GerHead no tiene crédito para comprar su pack
     //      System.out.println("\nGearHead sin credito para su pack\n" + 

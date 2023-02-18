@@ -26,9 +26,25 @@ public class CrystalExpender {
 
 
 
+    public void setStock(Integer stock) {
+        this.stock = stock;
+    }
+
+
+
     @Override
     public String toString() {
         return "stock: " + getStock() + "\nitemCost: " + getItemCost();
+    }
+
+
+
+    public void dispatch(CreditCard card) {
+        
+        if (card.credit() >= getItemCost()) {
+            card.setCredit(card.credit()-getItemCost());
+            setStock(getStock()-1);
+        }
     }
 
 
