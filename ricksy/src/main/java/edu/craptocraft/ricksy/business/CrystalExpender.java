@@ -41,7 +41,7 @@ public class CrystalExpender implements GuestDispatcher {
 
     public void dispatch(CreditCard card) {
         
-        if (card.credit() >= getItemCost()) {
+        if (card.credit() >= getItemCost() && stock() > 0) {
             card.setCredit(card.credit()-getItemCost());
             setStock(stock()-1);
         }

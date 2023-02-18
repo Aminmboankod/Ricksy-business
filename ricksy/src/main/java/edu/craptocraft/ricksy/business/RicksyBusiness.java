@@ -180,30 +180,30 @@
          receptivo.dispatch(squanchy);
          mostrarReserva(squanchy, packExpender, ufosPark);
  
-    //      // Gearhead reserva ovni y pack.
-    //      // No tiene crédito.
+         // Gearhead reserva ovni y pack.
+         // No tiene crédito.
  
-    //      System.out.println("\nLLega GearHead!\n" + 
-    //                           "===============");
-    //      gearHead.pay(3000); // no tiene crédito
-    //      receptivo.dispatch(gearHead);
-    //      mostrarReserva(gearHead, packExpender, ufosPark);
+         System.out.println("\nLLega GearHead!\n" + 
+                              "===============");
+         gearHead.pay(3000); // no tiene crédito
+         receptivo.dispatch(gearHead);
+         mostrarReserva(gearHead, packExpender, ufosPark);
  
-    //      // Birdpearson es recibido en la fiesta
+         // Birdpearson es recibido en la fiesta
  
-    //      System.out.println("\nLLega Birdpearson!\n" + 
-    //                           "==================");
-    //      CreditCard birdpearson = new CreditCard("Birdpearson", "1111111111111111");
-    //      receptivo.dispatch(birdpearson);
-    //      mostrarReserva(birdpearson, packExpender, ufosPark);
+         System.out.println("\nLLega Birdpearson!\n" + 
+                              "==================");
+         CreditCard birdpearson = new CreditCard("Birdpearson", "1111111111111111");
+         receptivo.dispatch(birdpearson);
+         mostrarReserva(birdpearson, packExpender, ufosPark);
  
-    //      // Morty intenta reserver un ovni y un pack pero no quedan
+         // Morty intenta reserver un ovni y un pack pero no quedan
  
-    //      System.out.println("\nMorty quiere pack y ovni pero no quedan :(\n" + 
-    //                           "==========================================");
-    //      morty = new CreditCard("Morty", "0000000000000000");
-    //      receptivo.dispatch(morty);
-    //      mostrarReserva(morty, packExpender, ufosPark);
+         System.out.println("\nMorty quiere pack y ovni pero no quedan :(\n" + 
+                              "==========================================");
+         morty = new CreditCard("Morty", "0000000000000000");
+         receptivo.dispatch(morty);
+         mostrarReserva(morty, packExpender, ufosPark);
          
  
     //      /**
@@ -222,27 +222,27 @@
  
     //       // tu código aquí
  
-    //      RickMenuDispatcher MenuDispatcher = new RickMenuDispatcher();
+         RickMenuDispatcher MenuDispatcher = new RickMenuDispatcher();
  
-    //      receptivo.registra(MenuDispatcher);
+         receptivo.registra(MenuDispatcher);
  
-    //      CreditCard[] cards = {abradolph, squanchy, morty, gearHead, birdpearson};
+         CreditCard[] cards = {abradolph, squanchy, morty, gearHead, birdpearson};
  
-    //      for (CreditCard card: cards) {
-    //          receptivo.dispatch(card);
-    //      }
+         for (CreditCard card: cards) {
+             receptivo.dispatch(card);
+         }
  
-    //      System.out.println("\nPedidos de RickMenus:\n" + 
-    //                           "=====================");
-    //      System.out.println(MenuDispatcher);
+         System.out.println("\nPedidos de RickMenus:\n" + 
+                              "=====================");
+         System.out.println(MenuDispatcher);
  
-    //      System.out.println("\nCreditos de los invitados/as:\n" + 
-    //                           "=============================");
+         System.out.println("\nCreditos de los invitados/as:\n" + 
+                              "=============================");
  
-    //      for (CreditCard card: cards) {
-    //          System.out.println(card);
-    //          System.out.println();
-    //      }
+         for (CreditCard card: cards) {
+             System.out.println(card);
+             System.out.println();
+         }
      }
  
      private static void mostrarReserva(CreditCard card, CrystalExpender expender, UfosPark ufos) {
