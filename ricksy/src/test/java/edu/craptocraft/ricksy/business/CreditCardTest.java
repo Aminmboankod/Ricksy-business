@@ -25,4 +25,12 @@ public class CreditCardTest {
     public void testTostring() {
         assertEquals("owner: Abradolph Lincler\nnumber: 4916119711304546\ncredit: 3000.0EZI", abradolh.toString());
     }
-}
+
+    @Test
+    public void testPay() {
+        CreditCard gearHead = new CreditCard("Gearhead", "8888888888888888");
+        gearHead.pay(3000);
+        assertEquals(0d, gearHead.credit(), 0);
+    }
+}   
+

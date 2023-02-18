@@ -41,6 +41,14 @@ public class CreditCard {
         return "owner: " + getOwner() + "\nnumber: " + number() + "\ncredit: " + credit() + SYMBOL;
     }
 
+    public void pay(int cost) {
+        if ( credit()>cost ) {
+            setCredit(-credit);
+        } else  {
+            setCredit(0d);
+        }
+    }
+
 
     
 }
