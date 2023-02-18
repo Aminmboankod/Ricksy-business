@@ -41,7 +41,7 @@ public class UfosPark {
 
     public String getUfoOf(String number) {
 
-        String ufo = "";
+        String ufo = null;
 
         for (String key : flota.keySet()) {
             if (flota.get(key) == number) {
