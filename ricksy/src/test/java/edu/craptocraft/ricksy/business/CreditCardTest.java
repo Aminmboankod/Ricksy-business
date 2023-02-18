@@ -32,5 +32,7 @@ public class CreditCardTest {
         gearHead.pay(3000);
         assertEquals(0d, gearHead.credit(), 0);
     }
+
+    
 }   
 

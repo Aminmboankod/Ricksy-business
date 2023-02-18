@@ -16,17 +16,15 @@ public class UfosPark {
         double costOvni = 500d;
         double cost = card.credit() - costOvni;
 
-        if ( (card.credit() >= costOvni) && (!flota.containsValue(card.number()))) {
-            card.setCredit(cost);
-            for (String key : flota.keySet()) {
+        for (String key : flota.keySet()) {
+            if ( card.credit() >= costOvni && !flota.containsValue(card.number())) {
                 if (flota.get(key) == null) {
+                    card.setCredit(cost);
                     flota.replace(key, card.number());
                 }
-            } 
-        } else {
-            System.out.println("Ya tiene un ovni");
-        }
-        
+            }
+        } 
+
     }
 
 
@@ -35,22 +33,34 @@ public class UfosPark {
         return flota;
     }
 
+    public double getFee() {
+        return fee;
+    }
+
     public void add(String ovni) {
         getFlota().putIfAbsent(ovni, null);
     }
 
     public String getUfoOf(String number) {
 
-        String ufo = null;
+        String ufo = "";
 
         for (String key : flota.keySet()) {
             if (flota.get(key) == number) {
     
                 ufo = key;
+                return ufo;
+            } else {
+                ufo = null;
             }
-    
         }
         
         return ufo;
     }
+
+    @Override
+    public String toString() {
+        return getFlota().keySet().toString();
+    }
+    
 }

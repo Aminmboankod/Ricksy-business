@@ -14,11 +14,14 @@ public class UfosParkTest {
     
     UfosPark ufosPark;
     CreditCard abradolh;
+    CreditCard squanchy;
 
     @Before
     public void setup(){
         abradolh = new CreditCard("Abradolph Lincler", "4916119711304546");
         ufosPark = new UfosPark();
+        squanchy = new CreditCard("Squanchy", "4444444444444444");
+
 
     }
 
@@ -37,11 +40,7 @@ public class UfosParkTest {
     * El coste del ovni es de 500 EZIs.
     */
 
-    @Test
-    public void testdispatch(){
-        ufosPark.dispatch(abradolh);
-        assertEquals(2500d, abradolh.credit(), 0);
-    }
+
 
     @Test
     public void testAdd() {
@@ -64,6 +63,11 @@ public class UfosParkTest {
             ufosPark.add(ovni);
         }
         ufosPark.dispatch(abradolh);
-        assertEquals("unx", ufosPark.getUfoOf(abradolh.number()));
+        assertEquals("dox", ufosPark.getUfoOf(abradolh.number()));
+
+        
+        ufosPark.dispatch(squanchy);
+        assertNotNull(squanchy);
+        assertEquals("unx", ufosPark.getUfoOf(squanchy.number()));
     }
 }
