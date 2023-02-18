@@ -52,7 +52,7 @@
     //       * El coste del ovni es de 500 EZIs.
     //       */
  
-    //      UfosPark ufosPark = new UfosPark();
+         UfosPark ufosPark = new UfosPark();
  
     //      // Da de alta en la flota de ovnis 2 UFOS.
  
